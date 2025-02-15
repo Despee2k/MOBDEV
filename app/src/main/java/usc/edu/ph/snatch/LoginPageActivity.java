@@ -43,7 +43,7 @@ public class LoginPageActivity extends AppCompatActivity {
                 String usernameFieldContent = editUsername.getText().toString();
                 String passwordFieldContent = editPassword.getText().toString();
                 if(usernameFieldContent.equals("Reynat Gwapo") && passwordFieldContent.equals("true")){
-                    Intent intentLogin = new Intent(LoginPageActivity.this, HomePage.class);
+                    Intent intentLogin = new Intent(LoginPageActivity.this, NewHomeActivity.class);
                     intentLogin.putExtra("username", usernameFieldContent);
 
                     startActivity(intentLogin);
