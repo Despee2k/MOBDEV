@@ -25,9 +25,6 @@
             android:name=".ItemDetailsActivity"
             android:exported="true" />
         <activity
-            android:name=".HomePage"
-            android:exported="true" />
-        <activity
             android:name=".LoginPageActivity"
             android:exported="true" />
         <activity
