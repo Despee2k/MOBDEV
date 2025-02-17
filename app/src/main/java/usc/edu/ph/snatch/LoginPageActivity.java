@@ -15,7 +15,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 public class LoginPageActivity extends AppCompatActivity {
 
-    Button loginButton;
+    Button loginButton, backButton;
 
     EditText editUsername, editPassword;
 
@@ -29,6 +29,7 @@ public class LoginPageActivity extends AppCompatActivity {
 
         // Buttons
         loginButton = findViewById(R.id.loginBtn);
+        backButton = findViewById(R.id.backBtn);
 
         // Edit Fields
         editUsername = findViewById(R.id.editUser);
@@ -50,6 +51,15 @@ public class LoginPageActivity extends AppCompatActivity {
                 } else {
                     wrongContent.setText("WRONG USERNAME OR PASSWORD");
                 }
+            }
+        });
+
+        backButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intentBack = new Intent(LoginPageActivity.this, LoginPageActivity.class);
+
+                startActivity(intentBack);
             }
         });
     }

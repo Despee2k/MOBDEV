@@ -12,25 +12,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hello, " />
+        android:orientation="horizontal"
+        android:padding="8dp">
 
         <TextView
             android:id="@+id/username"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:text=""
+            android:layout_weight="1"
             android:textStyle="bold" />
 
         <Button
             android:id="@+id/logoutBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="120dp"
             android:background="@drawable/custom_button"
             android:textColor="@color/white"
             android:text="Logout" />
@@ -54,8 +50,10 @@
 
     <Button
         android:id="@+id/checkout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:textColor="@color/white"
         android:text="Checkout" />
 
 </LinearLayout>

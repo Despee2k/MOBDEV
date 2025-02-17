@@ -1,5 +1,6 @@
 package usc.edu.ph.snatch;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -46,6 +47,7 @@ public class NewHomeActivity extends AppCompatActivity {
         initializeViews();
     }
 
+    @SuppressLint("SetTextI18n")
     private void initializeViews() {
         mySpinner = findViewById(R.id.mySpinner);
         mySpinner.setAdapter(
@@ -60,7 +62,7 @@ public class NewHomeActivity extends AppCompatActivity {
         username = findViewById(R.id.username);
         String user = getIntent().getStringExtra("username");
         if (user != null) {
-            username.setText(user);
+            username.setText("Hello, " + user);
         }
 
         // Initialize logout & checkout buttons
